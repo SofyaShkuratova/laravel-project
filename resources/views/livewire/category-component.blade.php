@@ -14,7 +14,7 @@
                     <div class="col-lg-9">
                         <div class="shop-product-fillter">
                             <div class="totall-product">
-                                <p> We found <strong class="text-brand">{{$products->total()}}</strong> items for you!</p>
+                                <p> We found <strong class="text-brand">{{$products->total()}}</strong> items for you from <strong class="text-brand">{{ $category_name }}</strong>!</p>
                             </div>
                             <div class="sort-by-product-area">
                                 <div class="sort-by-cover mr-10">
@@ -89,7 +89,7 @@
                                             </div>
                                             <div class="product-price">
                                                 <span> ${{$product->regular_price}} </span>
-{{--                                                <span class="old-price">${{245.8}}</span>--}}
+                                                {{--                                                <span class="old-price">${{245.8}}</span>--}}
                                             </div>
                                             <div class="product-action-1 show">
                                                 <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{$product->id}}, '{{ $product->name }}', {{ $product->regular_price }})"><i class="fi-rs-shopping-bag-add"></i></a>
@@ -103,16 +103,16 @@
                         <!--pagination-->
                         <div class="pagination-area mt-15 mb-sm-5 mb-lg-0">
                             {{$products->links()}}
-{{--                            <nav aria-label="Page navigation example">--}}
-{{--                                <ul class="pagination justify-content-start">--}}
-{{--                                    <li class="page-item active"><a class="page-link" href="#">01</a></li>--}}
-{{--                                    <li class="page-item"><a class="page-link" href="#">02</a></li>--}}
-{{--                                    <li class="page-item"><a class="page-link" href="#">03</a></li>--}}
-{{--                                    <li class="page-item"><a class="page-link dot" href="#">...</a></li>--}}
-{{--                                    <li class="page-item"><a class="page-link" href="#">16</a></li>--}}
-{{--                                    <li class="page-item"><a class="page-link" href="#"><i class="fi-rs-angle-double-small-right"></i></a></li>--}}
-{{--                                </ul>--}}
-{{--                            </nav>--}}
+                            {{--                            <nav aria-label="Page navigation example">--}}
+                            {{--                                <ul class="pagination justify-content-start">--}}
+                            {{--                                    <li class="page-item active"><a class="page-link" href="#">01</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">02</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">03</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link dot" href="#">...</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#">16</a></li>--}}
+                            {{--                                    <li class="page-item"><a class="page-link" href="#"><i class="fi-rs-angle-double-small-right"></i></a></li>--}}
+                            {{--                                </ul>--}}
+                            {{--                            </nav>--}}
                         </div>
                     </div>
                     <div class="col-lg-3 primary-sidebar sticky-sidebar">

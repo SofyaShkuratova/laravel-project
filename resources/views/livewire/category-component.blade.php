@@ -3,8 +3,8 @@
         <div class="page-header breadcrumb-wrap">
             <div class="container">
                 <div class="breadcrumb">
-                    <a href="{{route('home.index')}}" rel="nofollow">Home</a>
-                    <span></span> Shop
+                    <a href="{{route('home.index')}}" rel="nofollow">Главная</a>
+                    <span></span> Магазиин
                 </div>
             </div>
         </div>
@@ -14,7 +14,7 @@
                     <div class="col-lg-9">
                         <div class="shop-product-fillter">
                             <div class="totall-product">
-                                <p> We found <strong class="text-brand">{{$products->total()}}</strong> items for you from <strong class="text-brand">{{ $category_name }}</strong>!</p>
+                                <p> Мы нашли <strong class="text-brand">{{$products->total()}}</strong> товаров для вас <strong class="text-brand">{{ $category_name }}</strong>!</p>
                             </div>
                             <div class="sort-by-product-area">
                                 <div class="sort-by-cover mr-10">
